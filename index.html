@@ -12,12 +12,29 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <!-- Link to your custom CSS -->
   </head>
   <body>
     <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
-      <div class="border-right" id="sidebar-wrapper">
+      <div
+        class="border-right"
+        id="sidebar-wrapper"
+        style="
+          color: #fff;
+          background: linear-gradient(
+            90deg,
+            rgba(23, 124, 128, 1) 0%,
+            rgba(15, 46, 47, 1) 94%
+          );
+        "
+      >
         <div class="sidebar-heading text-white">
           <img
             src="img/Noodle Logo.png"
@@ -29,8 +46,19 @@
         <div class="list-group list-group-flush">
           <a
             href="#"
-            class="list-group-item list-group-item-action bg-primary text-white"
+            class="list-group-item list-group-item-action bg-transparent text-white"
             >Tools</a
+          >
+          <a
+            href="https://docs.google.com/spreadsheets/d/14ZpEkgBtL0nZ6-Fg_dFnYHGJDP9VtM9A3cdIjnZZ0E8/edit?usp=sharing"
+            target="_blank"
+            class="list-group-item list-group-item-action bg-transparent text-white"
+            >Submit Requests</a
+          >
+          <a
+            href=""
+            class="list-group-item list-group-item-action bg-transparent text-white"
+            >Help Desk</a
           >
         </div>
       </div>
@@ -38,83 +66,86 @@
 
       <!-- Page Content -->
       <div id="page-content-wrapper">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
-        >
-          <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Search Apps</a>
-              </li>
-            </ul>
-          </div>
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+          Tools and Innovation
         </nav>
 
         <div class="container-fluid">
-          <div class="row mt-4">
-            <!-- Repeat this div for each app icon -->
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/grabber.png"
-                  class="card-img-top mt-4"
-                  alt="App Icon"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a href="http://10.121.100.4:5000/ComplianceGrabber/"></a
-                    >Compliance Grabber
-                  </h5>
+          <div class="row mt-5">
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+              <a
+                href="http://10.121.100.4:5000/ComplianceGrabber/"
+                class="text-dark text-decoration-none"
+                target="_blank"
+              >
+                <div class="card">
+                  <img
+                    src="img/grabber.png"
+                    class="card-img-top mt-4"
+                    alt="App Icon"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Compliance Grabber 2.0</h5>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/grabber.png"
-                  class="card-img-top mt-4"
-                  alt="App Icon"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a href="http://10.121.100.4:5000/tools/PDFTools/"></a>PDF
-                    Tools
-                  </h5>
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+              <a
+                href="http://10.121.100.4:5000/tools/PDFTools/"
+                class="text-dark text-decoration-none"
+                target="_blank"
+              >
+                <div class="card">
+                  <img
+                    src="img/pdfTools.jpg"
+                    class="card-img-top mt-4"
+                    alt="App Icon"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">PDF Reader Tools</h5>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/grabber.png"
-                  class="card-img-top mt-4"
-                  alt="App Icon"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a href="http://10.121.100.4:5000/tools/ClientData/"></a
-                    >Client Data
-                  </h5>
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+              <a
+                href="http://10.121.100.4:5000/tools/ClientData/"
+                class="text-dark text-decoration-none"
+                target="_blank"
+              >
+                <div class="card">
+                  <img
+                    src="img/grabber.png"
+                    class="card-img-top mt-4"
+                    alt="App Icon"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Client Data Automation</h5>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/grabber.png"
-                  class="card-img-top mt-4"
-                  alt="App Icon"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a href="http://10.121.100.4:5000/tools/csvsplitter/"></a
-                    >CSV Splitter
-                  </h5>
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+              <a
+                href="http://10.121.100.4:5000/tools/csvsplitter/"
+                class="text-dark text-decoration-none"
+                target="_blank"
+              >
+                <div class="card">
+                  <img
+                    src="img/grabber.png"
+                    height="50"
+                    class="card-img-top mt-4"
+                    alt="App Icon"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">CSV Splitter Tool</h5>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <!-- End of app icon div -->
+            <!-- Add more app cards as needed -->
           </div>
         </div>
       </div>
